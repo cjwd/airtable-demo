@@ -1,0 +1,15 @@
+extends ../layouts/base
+include ../mixins/_modelCard
+include ../mixins/_pagination
+
+block content
+  .container
+    h1.title= title
+
+    +pagination(page, pages, count)
+
+    .models
+      each model in models
+        +modelCard(model)
+
+    +pagination(page, pages, count)

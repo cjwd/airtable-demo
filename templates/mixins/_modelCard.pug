@@ -1,0 +1,11 @@
+mixin modelCard(model = {})
+  .model.card
+    .model__hero.card-image
+      figure.image
+        if(model.photo)
+          img(src=`${model.photo[0].url}`)
+        else
+          img(src="/images/model.jpg")
+      .model__details.card-content
+        h2.subtitle
+          a(href=`/model/${model._id}`) #{model.name}

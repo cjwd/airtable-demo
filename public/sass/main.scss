@@ -1,0 +1,82 @@
+
+@charset "utf-8";
+@import "~bulma/bulma";
+
+#data-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-card {
+  min-height: 160px;
+  width: 200px;
+
+  border: 1px solid #777;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 2px rgba(0,0,0,0.2);
+  padding: 0.5em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.gallery-card img {
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.models {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+
+.signUpForm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16em);
+  grid-gap: 1em;
+
+  .field:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+.tabs-content li {
+  list-style: none;
+  display: none;
+}
+
+.tabs-content .is-active {
+  display: block;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: $size-4;
+  margin-bottom: $size-4;
+}
+
+.total-models {
+  margin-left: $size-4;
+  margin-right: $size-4;
+}
+
+.paginate-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paging-input {
+  display: flex;
+  align-items: center;
+
+  input {
+    width: $size-1;
+    margin-left: $size-6;
+    margin-right: $size-6;
+  }
+}
