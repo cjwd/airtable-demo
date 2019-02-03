@@ -60,7 +60,7 @@ typings/
 
 # dotenv environment variables file
 .env
-#variables.env
+variables.env
 
 # next.js build output
 .next
